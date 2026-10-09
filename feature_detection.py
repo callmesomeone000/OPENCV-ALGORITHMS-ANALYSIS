@@ -721,5 +721,3 @@ print(f" - Repeatability: re-detected within {MATCH_THRESHOLD}px after mapping t
 print(" - Average Response is not comparable between algorithms.")
 print()
 print("=" * 70)
-print("You can now use the images and graphs in your blog.")
-print("=" * 70)
