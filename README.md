@@ -1,7 +1,7 @@
 # OpenCV Algorithms Analysis
 
 A simple benchmark and visualization toolkit for feature-detection algorithms (implemented in Python). It measures detection and descriptor timings, keypoint statistics and repeatability on images, and produces per-algorithm videos and reports for input videos.
-
+ 
 ## Stack
 - Language: Python
 - Notable libraries: OpenCV (cv2), NumPy, pandas, Matplotlib
