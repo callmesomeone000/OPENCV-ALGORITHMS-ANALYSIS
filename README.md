@@ -76,14 +76,3 @@ Key constants you may want to change:
 - GUI file pickers: both scripts use tkinter for file selection. In headless servers you must pass file paths (feature_detection.py) or provide a virtual display / modify the code to accept CLI args for video path.
 - Excel export in `feature_detection.py` requires `openpyxl`. If not installed, the script will skip the Excel export and print a notice.
 
-## Contributing
-This repo currently has no CONTRIBUTING file. If you plan to extend it:
-- Add tests for data-processing functions (pandas outputs, repeatability calculation).
-- Consider extracting common detector builders and utilities into an importable module for reuse.
-
-## License
-No license is provided in this repository. Add a LICENSE file if you want to permit reuse.
-
----
-
-Generated README based on the Python scripts in this repository (feature_detection.py and video_keypoints.py).
