@@ -1,0 +1,6 @@
+algorithm,total_descriptor_time_ms,avg_descriptor_time_ms,descriptor_count,descriptor_dim,descriptor_dtype
+MSER,N/A,N/A,N/A,N/A,N/A
+SIFT,469.4562,39.1214,1432,128,float32
+FAST,N/A,N/A,N/A,N/A,N/A
+HARRIS,N/A,N/A,N/A,N/A,N/A
+ORB,55.7044,4.642,3000,32,uint8

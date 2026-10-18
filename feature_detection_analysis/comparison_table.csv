@@ -1,0 +1,6 @@
+Algorithm,Total_Detection_Time_ms,Avg_Detection_Time_ms,Total_Descriptor_Time_ms,Avg_Descriptor_Time_ms,Raw_Detections,Selected_Keypoints,Projected_Keypoints,Projection_Success_%,Unique_3D_Points,Duplicate_Rate_%,Repeatability_%,Mean_NN_Distance,Feature_Density,Spatial_Coverage_%,Peak_Memory_MB
+MSER,299.8417,24.9868,N/A,N/A,22,22,22,100.0,17,22.73,9.09,0.088805,2.749506,0.22,0.0
+SIFT,703.1462,58.5955,469.4562,39.1214,1432,1432,924,64.53,554,40.04,18.23,0.03531,89.601534,10.8,702.11
+FAST,3.8949,0.3246,N/A,N/A,1391,1391,930,66.86,578,37.85,27.98,0.025075,93.483189,15.66,0.0
+HARRIS,155.3157,12.943,N/A,N/A,558,558,290,51.97,205,29.31,20.95,0.042473,33.155802,6.24,0.0
+ORB,310.5204,25.8767,55.7044,4.642,6870,3000,1635,54.5,596,63.55,34.58,0.020918,96.39443,10.98,702.15

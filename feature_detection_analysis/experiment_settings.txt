@@ -1,0 +1,19 @@
+3D Feature Detection Comparison — Experiment Settings
+=====================================================
+Input model: C:/Users/MOHAMMAD WASIQ KHAN/Downloads/Meshy_AI_Cardboard_Crown_1015134540_texture.glb
+Image size: 800 x 600
+Focal length: 700
+Number of views: 12
+Shared max points per view: 250
+Shared 3D deduplication distance: 0.012
+Shared final export cap per algorithm: 700
+All algorithms receive the same grayscale render; no CLAHE is applied.
+MSER: delta=5, min_area=30, max_area=14400, max_variation=0.25, min_diversity=0.20
+FAST: threshold=20, nonmaxSuppression=True
+Harris: blockSize=2, apertureSize=3, k=0.04, threshold=1% of maximum response, local maxima selected
+ORB: nfeatures=10000 before the shared projection cap
+SIFT: nfeatures=0 (all detected keypoints before shared cap)
+
+Interpretation note:
+Counts measure detections, not accuracy. Accuracy/repeatability requires ground truth or a defined evaluation protocol.
+3D coordinates are obtained by projecting detected 2D pixels using the renderer depth buffer.

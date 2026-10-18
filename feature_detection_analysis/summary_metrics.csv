@@ -1,0 +1,6 @@
+algorithm,views_processed,total_raw_2d_detections,average_raw_detections_per_view,total_points_selected_for_projection,successful_3d_projections,projection_success_percent,total_detection_time_ms,average_detection_time_ms,unique_3d_points_before_export_cap,exported_3d_markers,mser_delta,mser_min_area,mser_max_area,mser_max_variation,mser_min_diversity,shared_max_points_per_view,shared_deduplication_distance
+MSER,12,22,1.833,22,22,100.0,299.8417,24.9868,17,17,5,30,14400,0.25,0.2,250,0.012
+SIFT,12,1432,119.333,1432,924,64.53,703.1462,58.5955,554,554,,,,,,250,0.012
+FAST,12,1391,115.917,1391,930,66.86,3.8949,0.3246,578,578,,,,,,250,0.012
+HARRIS,12,558,46.5,558,290,51.97,155.3157,12.943,205,205,,,,,,250,0.012
+ORB,12,6870,572.5,3000,1635,54.5,310.5204,25.8767,596,596,,,,,,250,0.012
