@@ -1,7 +1,14 @@
 # 🔍 OpenCV Algorithms Analysis
 
 **A Python-based computer vision project for detecting, visualizing, and benchmarking image features in photos and videos.**
-
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python"/>
+  <img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white" alt="OpenCV"/>
+  <img src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white" alt="NumPy"/>
+  <img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white" alt="Pandas"/>
+  <img src="https://img.shields.io/badge/Matplotlib-11557C?style=for-the-badge&logo=plotly&logoColor=white" alt="Matplotlib"/>
+  <img src="https://img.shields.io/badge/Excel-217346?style=for-the-badge&logo=microsoftexcel&logoColor=white" alt="Excel"/>
+</p>
 This project compares five popular feature detection algorithms using OpenCV. It analyses static images and video footage, highlights detected keypoints, measures performance, and generates reports to help understand how different algorithms behave on the same input.
 
 ## ✨ Features
