@@ -391,7 +391,7 @@ The fixed policy does not make every aspect of the detectors identical; their de
   &nbsp;&nbsp;
   <a href="https://matplotlib.org/"><img src="https://cdn.simpleicons.org/plotly/3F4F75" alt="Plotting" width="55"/></a>
   &nbsp;&nbsp;
-  <a href="https://www.microsoft.com/microsoft-365/excel"><img src="https://cdn.simpleicons.org/microsoftexcel/217346" alt="Excel" width="55"/></a>
+ <a href="https://www.microsoft.com/microsoft-365/excel"> <img src="https://img.shields.io/badge/Microsoft_Excel-217346?style=for-the-badge&logo=microsoftexcel&logoColor=white" alt="Microsoft Excel"/></a>
 </p>
 
 | Technology | Purpose |
