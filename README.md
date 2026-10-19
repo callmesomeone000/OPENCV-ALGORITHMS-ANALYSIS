@@ -101,7 +101,7 @@ For each algorithm, the program compares every unordered pair of processed image
 - Computes SIFT descriptors at the selected keypoint locations.
 - Applies a mutual nearest-neighbour ratio test.
 - Requires at least 15 mutual matches before attempting geometric verification.
-- Estimates a fundamental matrix using RANSAC.
+- Estimates a fundamental matrix using RANSAC.(Random Sample Consensus) is an iterative algorithm used to estimate mathematical model parameters from data that contains a high number of "outliers" (noise/corrupted data)
 - Counts geometric inliers and classifies a pair as successful when it has at least 12 inliers.
 
 This provides a **cross-view matching proxy**, not a direct measurement of true feature repeatability.
@@ -306,41 +306,6 @@ images/
 Masks are resized to match the processed image dimensions using nearest-neighbour interpolation.
 
 When a valid mask exists, it restricts keypoint selection and the spatial metrics to the object region. If no valid mask is available, the full image is used.
-
----
-
-## 📐 Optional Ground-Truth Homographies
-
-For a more direct evaluation of feature repeatability, provide a file named:
-
-`ground_truth_homographies.csv`
-
-It must contain these columns:
-
-```csv
-Image_A,Image_B,H00,H01,H02,H10,H11,H12,H20,H21,H22
-```
-
-Each row represents a 3 × 3 homography mapping image A coordinates to image B coordinates in the **original, unresized images**.
-
-The matrix is interpreted as:
-
-\[
-\begin{bmatrix}
-x'\\y'\\w'
-\end{bmatrix}
-=
-H
-\begin{bmatrix}
-x\\y\\1
-\end{bmatrix}
-\]
-
-The transformed pixel coordinates are obtained by dividing the first two components by \(w'\).
-
-Provide accurate, invertible homographies for the relevant image pairs. The program can also use the inverse of a supplied reverse-direction homography.
-
-**Applicability:** A single homography is appropriate for planar scenes or pure camera rotation under the usual pinhole-camera assumptions. It does not generally describe arbitrary viewpoint changes of a non-planar object.
 
 ---
 
