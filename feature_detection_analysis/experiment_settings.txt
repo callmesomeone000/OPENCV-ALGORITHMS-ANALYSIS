@@ -1,18 +1,22 @@
 3D Feature Detection Comparison — Experiment Settings
 =====================================================
-Input model: C:/Users/MOHAMMAD WASIQ KHAN/Downloads/Meshy_AI_Cardboard_Crown_1015134540_texture.glb
+Input model: C:/Users/MOHAMMAD WASIQ KHAN/Downloads/F-15_cardboard_craft (1).glb
 Image size: 800 x 600
 Focal length: 700
-Number of views: 12
-Shared max points per view: 250
+Number of views: 20
+Final keypoint budget after 2D suppression: 1000
+2D spatial suppression radius: 3.0 px
+Detector timing: one warm-up plus mean of 5 runs
 Shared 3D deduplication distance: 0.012
 Shared final export cap per algorithm: 700
 All algorithms receive the same grayscale render; no CLAHE is applied.
-MSER: delta=5, min_area=30, max_area=14400, max_variation=0.25, min_diversity=0.20
-FAST: threshold=20, nonmaxSuppression=True
-Harris: blockSize=2, apertureSize=3, k=0.04, threshold=1% of maximum response, local maxima selected
+MSER: delta=5, area limits scaled from 307200 px (reference min=30, max=14400), max_variation=0.25, min_diversity=0.20
+FAST: threshold=10, nonmaxSuppression=True
+Harris: blockSize=2, apertureSize=3, k=0.04, threshold=0.1% of maximum response, 3x3 local maxima selected
 ORB: nfeatures=10000 before the shared projection cap
-SIFT: nfeatures=0 (all detected keypoints before shared cap)
+SIFT: nfeatures=0 (all detected keypoints before response ranking/suppression/budget)
+Matching descriptors: SIFT extractor with fixed policy; fixed means size=16.0, angle=0, octave=0 for all detector types
+Cross-view matching: mutual ratio=0.75, minimum mutual matches=15, RANSAC threshold=1.5px, pair success >= 12 inliers
 
 Interpretation note:
 Counts measure detections, not accuracy. Accuracy/repeatability requires ground truth or a defined evaluation protocol.
